@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AmitDas | Wep Test</title>
+<style type="text/css">
+.table {
+	background-color: #666;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #B8B8B8;
+	border-right-color: #B8B8B8;
+	border-bottom-color: #B8B8B8;
+	border-left-color: #B8B8B8;
+	position: relative;
+	left: 600px;
+	top: 150px;
+	border-top-style: inset;
+	border-right-style: ridge;
+	border-bottom-style: outset;
+	border-left-style: groove;
+}
+.table tr td .left {
+	font-family: arial;
+	font-size: large;
+	font-weight: bolder;
+	color:#848484;
+	background-color: #C1C1C1;
+	height: 200px;
+	width: 247px;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: inset;
+	border-right-style: outset;
+	border-bottom-style: outset;
+	border-left-style: inset;
+	border-top-color: #D6D6D6;
+	border-right-color: #D6D6D6;
+	border-bottom-color: #D6D6D6;
+	border-left-color: #D6D6D6;
+}
+.table tr td .right {
+	background-color: #999;
+	height: 200px;
+	width: 335px;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: groove;
+	border-right-style: outset;
+	border-bottom-style: ridge;
+	border-left-style: inset;
+}
+.table tr td .right .inright {
+	position: relative;
+	left: 60px;
+	top: 20px;
+}
+.table tr td .left .inleft {
+	font-family: "arial", Monaco, monospace;
+	position: relative;
+	top: 55px;
+	font-size: 18px;
+	display: inherit;
+	list-style-position: inside;
+	list-style-type: circle;
+	left: 5px;
+}
+.table tr td .sign {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #636;
+}
+.table tr td .right .inright form .input {
+	width: 180px;
+	background-color: #EBEBEB;
+}
+.table tr td .right .inright form .signin {
+	background-color: #EAEAEA;
+	width: 80px;
+	
+}
+</style>
+
+<script type="text/javascript">
+function check()
+{
+var x=document.forms["loginform"]["email"].value;
+var y=document.forms["loginform"]["pwd"].value;
+
+if (x =='guest@example.com' && y == 'guest' )
+  {
+  alert("welcome guest !!!");
+  return true;
+  }
+
+else
+  { alert("you hv entered a wrong input value!!!");
+     return false;}
+}
+</script>
+</head>
+
+<body background="assets/pic1.jpg">
+<table width="500" height="250" class="table" >
+  <tr>
+    <td width="225">&nbsp; <div class="left" ><div class="inleft" >Web Programming Class   Test WebPage </div></div></td>
+    <td width="325">&nbsp;  <b class="sign" >Sign In To Your Account</b>
+    <div class="right" ><div class="inright" >    
+    <form method="posts#new" action="nextcheck.html" onsubmit="return check()" name="loginform" ><pre><b style="color: #2A2A2A;" >Email:</b>   <input type="email" name="email" value="guest@example.com" class="input" /><br />
+<b style="color: #2A2A2A;" >Password:</b><input type="password"  name="pwd" value="guest" class="input"  /><br />
+<b><i style="color: #2A2A2A;" >Remember Me</i></b> <input type="checkbox" name="rem"  /><br />
+                 <input type="submit"  name="submit" value="Sign In" class="signin" /><br /></form></div></div>  </pre>
+    </td>
+  </tr>
+</table>
+
+<!--
+<%= form_tag({:action => 'list_holidays_by_country'}, {:method => 'get'}) %>
+  <%= select_tag(:country, options_from_collection_for_select(@countries, :name, :name)) %>
+    <%= submit_tag 'Search', :name => nil %>
+<%= end_form_tag %>
+-->
+
+</body>
+</html>
