@@ -1,16 +1,22 @@
 class PostsController < ApplicationController
 
+http_basic_authenticate_with :name => "amitdas", :password => "secret", :except => [:index, :show]
   # GET /posts
-  # GET /posts.json
+ 
+ # GET /posts.json
+
 
   def index
   
-  @posts = Post.all
+     @posts = Post.all
 
-    respond_to do |format|
-      format.html # index.html.erb
+ 
+     respond_to do |format|
   
-    format.json { render json: @posts }
+     format.html 
+# index.html.erb
+  
+     format.json { render json: @posts }
   
   end
  
@@ -73,7 +79,7 @@ end
     
   if @post.save
       
-  format.html { redirect_to @post, notice: 'Post was successfully created.' }
+  format.html { redirect_to @post, notice: 'Your Message was successfully created.' }
    
      format.json { render json: @post, status: :created, location: @post }
   
@@ -102,7 +108,7 @@ def update
   
     if @post.update_attributes(params[:post])
   
-      format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+      format.html { redirect_to @post, notice: 'Your Message was successfully updated.' }
   
       format.json { head :no_content }
     

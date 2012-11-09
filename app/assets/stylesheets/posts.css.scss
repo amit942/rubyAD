@@ -1,3 +1,74 @@
 // Place all the styles related to the Posts controller here.
+
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// You can use Sass (SCSS) here: http:
+//sass-lang.com/
+
+.field
+{
+font-color:blue;
+font-family:verdana san serif;
+border-radius:10px;
+background-color:#A5BDBD;
+width:350px;
+position:relative;
+left:250px;
+border-style:outset;
+box-shadow: 10px 10px 5px #555555;
+
+}
+
+.actions
+{
+font-family:verdana san serif;
+background-color:#A5BDBD;
+border-radius:5px;
+width:120px;
+position:relative;
+left:350px;
+border-style:outset;
+}
+
+.body
+{
+background-color:#699191;
+}
+
+.showthing
+{
+font-size:12px;
+color:#f7f7f3;
+}
+
+.table
+{
+background-color:#f3f3f3;
+border-radius:15px;
+border-style:inset;
+border-color:#964;
+box-shadow: 10px 10px 5px #333333;
+}
+
+.table tr th
+{
+color:#0F0F3D;
+}
+
+.showm
+{
+background-color:#964;
+width: 500px;
+border-top-left-radius:10px;
+border-bottom-right-radius:18px;
+border-top-right-radius:18px;
+border-style:inset;
+box-shadow: 10px 10px 5px #333344;
+}
+
+.editp
+{
+position:relative;
+left:300px;
+}
+

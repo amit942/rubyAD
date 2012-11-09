@@ -1,27 +1,57 @@
-<h1>Listing posts</h1>
+<div style="position:relative; left:350px;" >
+<h1 style="color:green; position:relative; left:200px;" >All Messeges</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Title</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<br />
+<table class="table" >
+ 
+ <tr>
+   
+ <th>Name</th>
+   
+ <th>Title</th>
+  
+  <th>Content</th>
+
+  <th>Link</th>   
+ <th></th>
+  
+  <th></th>
+  
+  <th></th>
+  
+</tr>
+
 
 <% @posts.each do |post| %>
-  <tr>
-    <td><%= post.name %></td>
-    <td><%= post.title %></td>
-    <td><%= post.content %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+ 
+ <tr>
+
+    <td style="color:#400000; " ><%= post.name %>
+    </td>
+  
+    <td style="color:#002952; " ><%= post.title %>
+    </td>
+  
+    <td style="color:#003366; " ><%= post.content %>
+    </td>
+    
+    <td  " ><%= link_to 'Show', post %>
+    </td>
+  
+    <td " ><%= link_to 'Edit', edit_post_path(post) %>
+    </td>
+    
+<td ><%= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete %>
+</td>
+ 
+ </tr>
+
 <% end %>
+
 </table>
 
 <br />
 
+
 <%= link_to 'New Post', new_post_path %>
+</div>
